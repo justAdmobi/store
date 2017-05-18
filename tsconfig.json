@@ -10,7 +10,8 @@
     "rootDir": "src",
     "outDir": "lib/",
     "noImplicitAny": false,
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true
   },
   "compileOnSave": false,
   "buildOnSave": false,

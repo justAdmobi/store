@@ -9,7 +9,7 @@
     "mocha": "mocha --opts mocha.opts",
     "lint": "tslint 'src/**/*.ts' 'examples/counter/**.ts' --exclude 'examples/counter/node_modules'",
     "cover": "cross-env NODE_ENV=test nyc npm run mocha",
-	"preinstall":"build"
+	"preinstall":"npm run build"
   },
   "typings": "./lib/index.d.ts",
   "repository": {

@@ -325,9 +325,9 @@ export class NgRedux<RootState> {
     }
 
   private storeToObservable = (store: Store<RootState>): Observable<RootState> =>
-    new Observable<RootState>((observer:Subscriber<RootState>) => {
-      observer.next(store.getState() );
-      store.subscribe(() => observer.next(store.getState() as RootState));
+    new Observable<RootState>((observer:any) => {
+        observer.next(store.getState() );
+        return store.subscribe(() => observer.next(store.getState() as RootState));
     });
 };
 
